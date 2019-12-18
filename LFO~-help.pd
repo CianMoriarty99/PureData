@@ -1,0 +1,28 @@
+#N canvas 362 200 491 488 10;
+#X obj 265 22 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 115 110 Depth;
+#X text 236 104 Speed;
+#X msg 207 104 20;
+#X msg 86 110 0.5;
+#X obj 93 399 output~;
+#X floatatom 213 369 5 0 0 0 - - -;
+#X floatatom 331 366 5 0 0 0 - - -;
+#X obj 375 23 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 127 22 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 212 390 Depth;
+#X text 329 388 Speed;
+#X text 88 447 Output Signal;
+#X obj 235 438 wsprobe~;
+#X obj 94 171 LFO~;
+#X connect 0 0 3 0;
+#X connect 3 0 14 1;
+#X connect 4 0 14 0;
+#X connect 8 0 14 2;
+#X connect 9 0 4 0;
+#X connect 14 0 5 0;
+#X connect 14 0 13 0;
+#X connect 14 1 6 0;
+#X connect 14 2 7 0;
